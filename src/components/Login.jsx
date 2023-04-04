@@ -5,13 +5,13 @@ const Login = () => (
             <h2 className="flex justify-center text-xl">Login</h2>
             <form className="space-y-2">
                 <div>
-                    <label for="email" className="leading-7 text-sm text-dark">Email</label>
-                    <input type="email" className="w-full bg-white border rounded-md border-gray-300 focus:border-primary focus:ring-2 focus:ring-secondary text-base outline-none text-dark25 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                    <label for="email" className="text-base text-dark">Email</label>
+                    <input type="email" className="w-full bg-white border rounded-md border-gray-300 focus:border-primary text-xs outline-none text-dark25 leading-5 py-1 px-3 transition-colors duration-200 ease-in-out"/>
                 </div>
                 <div>
-                    <label for="password" className="leading-7 text-sm text-dark">Password</label>
+                    <label for="password" className="text-base text-dark">Password</label>
                     <div className="flex items-center">
-                        <input type="password" className="w-full bg-white border rounded-md border-gray-300 focus:border-primary focus:ring-2 focus:ring-secondary text-base outline-none text-dark25 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                        <input type="password" className="w-full bg-white border rounded-md border-gray-300 focus:border-primary text-xs outline-none text-dark25 leading-5 py-1 px-3 transition-colors duration-200 ease-in-out"/>
                         <img className="absolute right-16" src='/public/assets/icon/pass-show.svg'/>
                     </div>
                     <label className="text-xs"><a href="#">Forgot password?</a></label>
