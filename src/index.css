@@ -14,12 +14,16 @@
     border: 1px solid transparent;
     border-radius: 20px;
     padding: 4px 16px;
-
     transition: all .3s ease-in-out;
   }
 
   .nav:not(.isActive):hover {
     border-color: theme("colors.accent");
     color: theme("colors.primary");
+  }
+
+  .card-grp {
+    border-radius: 20px;
+    padding: 2px 8px;
   }
 }
