@@ -1,10 +1,10 @@
 const RecipeCard = () => (
 
-    <div className="bg-lightmode rounded-xl drop-shadow w-[180px] m-3"> {/*will need to remove margin*/}
+    <div className="relative bg-lightmode rounded-xl drop-shadow w-[180px] m-3"> {/*will need to remove margin*/}
         <img className="object-cover object-center w-full h-[120px] rounded-t-xl" src="/public/assets/img/burger.jpg" alt="burger"/>
         <div className="space-y-2 px-3 pt-1.5 pb-4">
             <div>
-                <p className="text-dark font-semibold">Brut Butcher</p>{/*will need check font weight*/}
+                <p className="text-dark font-semibold">Brut Butcher</p>
                 <p className="text-xs text-dark25">Double steacks</p>
                 <ul className="flex items-center gap-1 text-xs my-1">
                     <li className="card-grp bg-secondary text-accent">American</li>
@@ -29,9 +29,9 @@ const RecipeCard = () => (
                     <img className="" src="/public/assets/icon/hat.svg" alt="Rating"/>
                     <img className="" src="/public/assets/icon/hat.svg" alt="Rating"/>
                 </div>
-                <img className="absolute -right-1 bottom-3 " src="public/assets/icon/bookmarked.svg" alt="Favorite"/>
             </div>
         </div>
+        <img className="absolute -right-1 bottom-3 " src="public/assets/icon/bookmarked.svg" alt="Favorite"/>
     </div>
 
 )
