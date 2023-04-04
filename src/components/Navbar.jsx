@@ -34,33 +34,16 @@ const Navbar = () => (
         </ul>
 
         <button className="md:hidden">
-          <img
-            src="/assets/icon/mobile-menu.svg"
-            alt="mobile-menu"
-            width="38"
-            height="30"
-          />
+          <img src="/assets/icon/mobile-menu.svg" alt="mobile-menu" width="38" height="30"/>
         </button>
 
         <div className="ml-2.5 hidden md:flex gap-6">
           <button>
-            <img
-              src="/assets/icon/notification-0.svg"
-              alt="notifications"
-              width="19"
-              height="20"
-            />
+            <img src="/assets/icon/notification-0.svg" alt="notifications" width="19" height="20"/>
           </button>
-
           <button>
-            <img
-              src="/assets/icon/options.svg"
-              alt="settings"
-              width="18"
-              height="20"
-            />
+            <img src="/assets/icon/options.svg" alt="settings" width="18" height="20"/>
           </button>
-
           <button>
             <img src="/assets/icon/logged.svg" alt="connect" width="20" height="20"/>
           </button>
