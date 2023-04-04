@@ -29,7 +29,7 @@ const Navbar = () => (
             <Link to={`/pantry`}>Pantry</Link>
           </li>
           <li className="nav">
-            <Link to={`/groceries/`}>Groceries</Link>
+            <Link to={`/groceries`}>Groceries</Link>
           </li>
         </ul>
 
@@ -62,12 +62,7 @@ const Navbar = () => (
           </button>
 
           <button>
-            <img
-              src="/assets/icon/disconnect.svg"
-              alt="disconnect"
-              width="20"
-              height="20"
-            />
+            <img src="/assets/icon/logged.svg" alt="connect" width="20" height="20"/>
           </button>
         </div>
       </div>

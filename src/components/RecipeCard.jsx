@@ -31,7 +31,9 @@ const RecipeCard = () => (
                 </div>
             </div>
         </div>
-        <img className="absolute -right-1 bottom-3 " src="public/assets/icon/bookmarked.svg" alt="Favorite"/>
+        <button className="absolute -right-1 bottom-3 ">
+            <img src="public/assets/icon/bookmarked.svg" alt="Favorite"/>
+        </button>
     </div>
 
 )
