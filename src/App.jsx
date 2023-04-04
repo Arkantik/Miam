@@ -3,6 +3,7 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import Navbar from '/src/components/Navbar.jsx'
 import RecipeCard from '/src/components/RecipeCard.jsx'
+import Login from '/src/components/Login.jsx'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <Navbar />
       <RecipeCard />
+      <Login />
     </div>
   )
 }
