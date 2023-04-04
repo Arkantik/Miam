@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Navbar from '/src/components/Navbar.jsx'
 import RecipeCard from '/src/components/RecipeCard.jsx'
 import Login from '/src/components/Login.jsx'
+import Register from '/src/components/Register.jsx'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <RecipeCard />
       <Login />
+      <Register/>
     </div>
   )
 }
