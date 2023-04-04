@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
    content: [
     "./index.html",
@@ -19,7 +20,7 @@ module.exports = {
       },
 
       fontFamily: {
-        sans: ["Poppins", "sans-serif"],
+        sans: ['"Poppins"', 'sans-serif'],
       },
 
       fontSize: {

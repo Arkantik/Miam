@@ -4,7 +4,7 @@ const RecipeCard = () => (
         <img className="object-cover object-center w-full h-[120px] rounded-t-xl" src="/public/assets/img/burger.jpg" alt="burger"/>
         <div className="space-y-2 px-3 pt-1.5 pb-4">
             <div>
-                <p className="text-dark font-semibold">Brut Butcher</p>
+                <p className="text-dark text-base">Brut Butcher</p>
                 <p className="text-xs text-dark25">Double steacks</p>
                 <ul className="flex items-center gap-1 text-xs my-1">
                     <li className="card-grp bg-secondary text-accent">American</li>
