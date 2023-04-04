@@ -6,12 +6,12 @@ const Login = () => (
             <form className="space-y-2">
                 <div>
                     <label for="email" className="text-base text-dark">Email</label>
-                    <input type="email" placeholder="username@gmail.com" className="placeholder:text-dark25 w-full bg-white border rounded-md border-gray-300 focus:border-primary text-xs outline-none text-dark25 leading-5 py-1 px-3 transition-colors duration-300 ease-in-out"/>
+                    <input type="email" placeholder="username@gmail.com" className="placeholder:text-dark25 placeholder:font-light w-full bg-white border rounded-md border-gray-300 focus:border-primary text-xs outline-none text-dark25 leading-5 py-1 px-3 transition-colors duration-300 ease-in-out"/>
                 </div>
                 <div>
                     <label for="password" className="text-base text-dark">Password</label>
                     <div className="flex items-center">
-                        <input type="Password" placeholder="Password" className="placeholder:text-dark25 w-full bg-white border rounded-md border-gray-300 focus:border-primary text-xs outline-none text-dark25 leading-5 py-1 pl-3 pr-9 duration-300 ease-in-out"/>
+                        <input type="Password" placeholder="Password" className="placeholder:text-dark25 placeholder:font-light w-full bg-white border rounded-md border-gray-300 focus:border-primary text-xs outline-none text-dark25 leading-5 py-1 pl-3 pr-9 duration-300 ease-in-out"/>
                         <img className="absolute right-16" src='/public/assets/icon/pass-show.svg' alt="show password icon"/> {/*Will need to fix the eye icon*/}
                     </div>
                     <label className="text-xs"><a href="#">Forgot password?</a></label>
