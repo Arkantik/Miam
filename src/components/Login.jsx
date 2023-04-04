@@ -11,7 +11,7 @@ const Login = () => (
                 <div>
                     <label for="password" className="text-base text-dark">Password</label>
                     <div className="flex items-center">
-                        <input type="password" className="w-full bg-white border rounded-md border-gray-300 focus:border-primary text-xs outline-none text-dark25 leading-5 py-1 px-3 duration-300 ease-in-out"/>
+                        <input type="password" className="w-full bg-white border rounded-md border-gray-300 focus:border-primary text-xs outline-none text-dark25 leading-5 py-1 pl-3 pr-9 duration-300 ease-in-out"/>
                         <img className="absolute right-16" src='/public/assets/icon/pass-show.svg'/> {/*Will need to fix the eye icon*/}
                     </div>
                     <label className="text-xs"><a href="#">Forgot password?</a></label>
