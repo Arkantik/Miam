@@ -6,6 +6,7 @@ const Navbar = () => (
       <div>
         <Link to={`/`}>
           <img
+            className="max-w-md"
             src="/assets/icon/logo-miam.svg"
             alt="Logo Miam"
             width="92"
@@ -14,8 +15,8 @@ const Navbar = () => (
         </Link>
       </div>
 
-      <div className="flex gap-8">
-        <ul className="hidden md:flex items-center gap-8 text-neutral text-base">
+      <div className="flex gap-[clamp(0.5rem,2vw,2rem)]">
+        <ul className="hidden md:flex items-center gap-[clamp(0.5rem,2vw,2rem)] text-neutral text-base">
           <li className="nav">
             <Link to={`/`}>Home</Link>
           </li>
@@ -34,18 +35,41 @@ const Navbar = () => (
         </ul>
 
         <button className="md:hidden">
-          <img src="/assets/icon/mobile-menu.svg" alt="mobile-menu" width="38" height="30"/>
+          <img
+            src="/assets/icon/mobile-menu.svg"
+            alt="mobile-menu"
+            width="38"
+            height="30"
+          />
         </button>
 
-        <div className="ml-2.5 hidden md:flex gap-6">
+        <div className="ml-2.5 hidden md:flex gap-[clamp(1rem,1.8vw,1.5rem)]">
           <button>
-            <img src="/assets/icon/notification-0.svg" alt="notifications" width="19" height="20"/>
+            <img
+              className="max-w-md"
+              src="/assets/icon/notification-0.svg"
+              alt="notifications"
+              width="19"
+              height="20"
+            />
           </button>
           <button>
-            <img src="/assets/icon/options.svg" alt="settings" width="18" height="20"/>
+            <img
+              className="max-w-md"
+              src="/assets/icon/options.svg"
+              alt="settings"
+              width="18"
+              height="20"
+            />
           </button>
           <button>
-            <img src="/assets/icon/logged.svg" alt="connect" width="20" height="20"/>
+            <img
+              className="max-w-md"
+              src="/assets/icon/logged.svg"
+              alt="connect"
+              width="20"
+              height="20"
+            />
           </button>
         </div>
       </div>
