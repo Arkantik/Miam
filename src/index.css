@@ -1,24 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
-  .isActive {
+  .is-active {
     background-color: theme("colors.primary");
     border-radius: 20px;
-    padding: 4px 16px
+    padding: 4px 16px;
   }
-
-  .nav {
+  .navlink {
     border: 1px solid transparent;
     border-radius: 20px;
     padding: 4px 16px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
-  .nav:not(.isActive):hover {
+  .navlink:not(.is-active):hover {
     border-color: theme("colors.accent");
     color: theme("colors.primary");
   }
@@ -30,22 +29,21 @@
 
   .line-login-before::before,
   .line-login-after::after {
-  content: "";
-  display: inline-block;
-  height: 1px;
-  width: 40px;
-  background-color: lightgray;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-    }
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 40px;
+    background-color: lightgray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   .line-login-before::before {
-  left: 0px;
-}
+    left: 0px;
+  }
 
   .line-login-after::after {
     right: 0px;
   }
-
 }

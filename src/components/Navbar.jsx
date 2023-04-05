@@ -1,10 +1,10 @@
-import { Outlet, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => (
   <header>
     <nav className="sticky bg-dark flex justify-between items-center px-8 py-2.5">
       <div>
-        <Link to={`/`}>
+        <NavLink to={`/`}>
           <img
             className="max-w-md"
             src="/assets/icon/logo-miam.svg"
@@ -12,25 +12,60 @@ const Navbar = () => (
             width="92"
             height="48"
           />
-        </Link>
+        </NavLink>
       </div>
 
       <div className="flex gap-[clamp(0.5rem,2vw,2rem)]">
         <ul className="hidden md:flex items-center gap-[clamp(0.5rem,2vw,2rem)] text-neutral text-base">
-          <li className="nav">
-            <Link to={`/`}>Home</Link>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "navlink is-active" : "navlink"
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li className="nav">
-            <Link to={`/planner`}>Planner</Link>
-          </li>
-          <li className="isActive nav">
-            <Link to={`/recipes`}>Recipes</Link>
+            <NavLink
+              to={`/planner`}
+              className={({ isActive }) =>
+                isActive ? "navlink is-active" : "navlink"
+              }
+            >
+              Planner
+            </NavLink>
           </li>
           <li className="nav">
-            <Link to={`/pantry`}>Pantry</Link>
+            <NavLink
+              to={`/recipes`}
+              className={({ isActive }) =>
+                isActive ? "navlink is-active" : "navlink"
+              }
+            >
+              Recipes
+            </NavLink>
           </li>
           <li className="nav">
-            <Link to={`/groceries`}>Groceries</Link>
+            <NavLink
+              to={`/pantry`}
+              className={({ isActive }) =>
+                isActive ? "navlink is-active" : "navlink"
+              }
+            >
+              Pantry
+            </NavLink>
+          </li>
+          <li className="nav">
+            <NavLink
+              to={`/groceries`}
+              className={({ isActive }) =>
+                isActive ? "navlink is-active" : "navlink"
+              }
+            >
+              Groceries
+            </NavLink>
           </li>
         </ul>
 
@@ -63,13 +98,15 @@ const Navbar = () => (
             />
           </button>
           <button>
-            <img
-              className="max-w-md"
-              src="/assets/icon/logged.svg"
-              alt="connect"
-              width="20"
-              height="20"
-            />
+            <NavLink to={`/login`}>
+              <img
+                className="max-w-md"
+                src="/assets/icon/logged.svg"
+                alt="connect"
+                width="20"
+                height="20"
+              />
+            </NavLink>
           </button>
         </div>
       </div>
