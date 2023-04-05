@@ -1,11 +1,11 @@
 import { useRouteError } from "react-router-dom";
 
-const ErrorPage = () => {
+const NotFound = () => {
   const error = useRouteError();
   console.error(error);
 
   return (
-    <div id="error-page">
+    <div id="not-found">
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
       <p>
@@ -15,4 +15,4 @@ const ErrorPage = () => {
   );
 };
 
-export default ErrorPage;
+export default NotFound;
