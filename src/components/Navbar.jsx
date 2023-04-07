@@ -21,7 +21,7 @@ const Navbar = () => (
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "navlink is-active" : "navlink"
+                `navlink ${isActive ? "navlink is-active" : "navlink"}`
               }
             >
               Home
@@ -31,7 +31,7 @@ const Navbar = () => (
             <NavLink
               to={`/planner`}
               className={({ isActive }) =>
-                isActive ? "navlink is-active" : "navlink"
+                `navlink ${isActive ? "is-active" : ""}`
               }
             >
               Planner
@@ -41,7 +41,7 @@ const Navbar = () => (
             <NavLink
               to={`/recipes`}
               className={({ isActive }) =>
-                isActive ? "navlink is-active" : "navlink"
+                `navlink ${isActive ? "is-active" : ""}`
               }
             >
               Recipes
@@ -51,7 +51,7 @@ const Navbar = () => (
             <NavLink
               to={`/pantry`}
               className={({ isActive }) =>
-                isActive ? "navlink is-active" : "navlink"
+                `navlink ${isActive ? "is-active" : ""}`
               }
             >
               Pantry
@@ -61,7 +61,7 @@ const Navbar = () => (
             <NavLink
               to={`/groceries`}
               className={({ isActive }) =>
-                isActive ? "navlink is-active" : "navlink"
+                `navlink ${isActive ? "is-active" : ""}`
               }
             >
               Groceries
