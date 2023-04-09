@@ -1,7 +1,7 @@
 export default function Pantry() {
   return (
-    <div className="pantry">
-      <h1>Pantry</h1>
-    </div>
+    <section className="pantry">
+      <h2 className="text-xl">Pantry</h2>
+    </section>
   );
 }

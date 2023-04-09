@@ -1,7 +1,7 @@
 export default function Groceries() {
   return (
-    <div className="groceries">
-      <h1>Groceries</h1>
-    </div>
+    <section className="groceries">
+      <h2 className="text-xl">Groceries</h2>
+    </section>
   );
 }

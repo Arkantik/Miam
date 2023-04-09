@@ -1,7 +1,7 @@
 export default function Planner() {
   return (
-    <div className="planner">
-      <h1>Planner</h1>
-    </div>
+    <section className="planner">
+      <h2 className="text-xl">Planner</h2>
+    </section>
   );
 }
