@@ -1,18 +1,15 @@
-import { useRouteError } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const NotFound = () => {
-  const error = useRouteError();
-  console.error(error);
-
+export default function NotFound() {
   return (
-    <div id="not-found">
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
+    <div>
+      <h2>Oops Page not found!</h2>
       <p>
-        <i>{error.statusText || error.message}</i>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, neque?
       </p>
+      <Link to={`/`} className="navlink">
+        Go back to Home page
+      </Link>
     </div>
   );
-};
-
-export default NotFound;
+}

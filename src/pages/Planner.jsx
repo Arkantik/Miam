@@ -1,12 +1,7 @@
-import Navbar from "/src/components/Navbar.jsx";
-
-const Planner = () => {
+export default function Planner() {
   return (
     <div className="planner">
-      <Navbar />
       <h1>Planner</h1>
     </div>
   );
-};
-
-export default Planner;
+}
