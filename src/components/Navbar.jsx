@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => (
-  <header>
-    <nav className="sticky bg-dark flex justify-between items-center px-8 py-2.5">
-      <div>
+export default function Navbar() {
+  return (
+    <>
+      <div className="logo-wrapper">
         <NavLink to={`/`}>
           <img
             className="max-w-md"
@@ -21,13 +21,13 @@ const Navbar = () => (
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `navlink ${isActive ? "navlink is-active" : "navlink"}`
+                `navlink ${isActive ? "is-active" : ""}`
               }
             >
               Home
             </NavLink>
           </li>
-          <li className="nav">
+          <li>
             <NavLink
               to={`/planner`}
               className={({ isActive }) =>
@@ -37,7 +37,7 @@ const Navbar = () => (
               Planner
             </NavLink>
           </li>
-          <li className="nav">
+          <li>
             <NavLink
               to={`/recipes`}
               className={({ isActive }) =>
@@ -47,7 +47,7 @@ const Navbar = () => (
               Recipes
             </NavLink>
           </li>
-          <li className="nav">
+          <li>
             <NavLink
               to={`/pantry`}
               className={({ isActive }) =>
@@ -57,7 +57,7 @@ const Navbar = () => (
               Pantry
             </NavLink>
           </li>
-          <li className="nav">
+          <li>
             <NavLink
               to={`/groceries`}
               className={({ isActive }) =>
@@ -78,40 +78,44 @@ const Navbar = () => (
           />
         </button>
 
-        <div className="ml-2.5 hidden md:flex gap-[clamp(1rem,1.8vw,1.5rem)]">
-          <button>
-            <img
-              className="max-w-md"
-              src="/assets/icon/notification-0.svg"
-              alt="notifications"
-              width="19"
-              height="20"
-            />
-          </button>
-          <button>
-            <img
-              className="max-w-md"
-              src="/assets/icon/options.svg"
-              alt="settings"
-              width="18"
-              height="20"
-            />
-          </button>
-          <button>
-            <NavLink to={`/login`}>
+        <ul className="ml-2.5 hidden md:flex md:items-center md:gap-[clamp(1rem,1.8vw,1.5rem)]">
+          <li className="md:flex">
+            <button>
               <img
                 className="max-w-md"
-                src="/assets/icon/logged.svg"
-                alt="connect"
-                width="20"
+                src="/assets/icon/notification-0.svg"
+                alt="notifications"
+                width="19"
                 height="20"
               />
-            </NavLink>
-          </button>
-        </div>
+            </button>
+          </li>
+          <li className="md:flex">
+            <button>
+              <img
+                className="max-w-md"
+                src="/assets/icon/options.svg"
+                alt="settings"
+                width="18"
+                height="20"
+              />
+            </button>
+          </li>
+          <li className="md:flex">
+            <button>
+              <NavLink to={`/login`}>
+                <img
+                  className="max-w-md"
+                  src="/assets/icon/logged.svg"
+                  alt="connect"
+                  width="20"
+                  height="20"
+                />
+              </NavLink>
+            </button>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header>
-);
-
-export default Navbar;
+    </>
+  );
+}
