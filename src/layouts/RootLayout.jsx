@@ -10,7 +10,7 @@ export default function RootLayout() {
         </nav>
       </header>
 
-      <main className="md:px-6">
+      <main className="px-4 py-6 md:px-6">
         <Outlet />
       </main>
     </div>

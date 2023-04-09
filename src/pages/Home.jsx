@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div>
+    <section>
       <h2 className="text-xl">Home</h2>
-    </div>
+    </section>
   );
 }

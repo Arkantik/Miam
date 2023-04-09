@@ -5,10 +5,10 @@ import recipes from "../data/data-recipes";
 
 export default function Recipes() {
   return (
-    <div className="space-y-4">
+    <section className="space-y-4">
       <h2 className="text-xl">My Recipes Library</h2>
-      {/* <Search /> */}
+      <Search />
       <RecipesLibrary recipes={recipes} />
-    </div>
+    </section>
   );
 }
