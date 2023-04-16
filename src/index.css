@@ -1,9 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/*________________________________________________________________________*\
+  $BASE
+/*________________________________________________________________________*/
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: italic;
+    src: url("/assets/fonts/poppins-400-italic.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    src: url("/assets/fonts/poppins-400.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 500;
+    src: url("/assets/fonts/poppins-500.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 600;
+    src: url("/assets/fonts/poppins-600.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 700;
+    src: url("/assets/fonts/poppins-700.ttf") format("truetype");
+  }
+}
+
+/*________________________________________________________________________*\
+  $UTILITIES
+/*________________________________________________________________________*/
 @layer utilities {
   .is-active {
     background-color: theme("colors.primary");
@@ -46,11 +79,11 @@
   .line-login-after::after {
     right: 0px;
   }
-}
 
-.gallery {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-  justify-items: center;
+  .gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    justify-items: center;
+  }
 }
