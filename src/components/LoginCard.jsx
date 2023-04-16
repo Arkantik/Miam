@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function LoginCard() {
   return (
-    <div className="text-dark bg-neutral50/30 backdrop-blur-sm rounded-3xl w-[300px] px-12 py-8">
+    <div className="text-dark bg-neutral50/30 rounded-3xl w-[300px] px-12 py-8">
       <div className="flex-col space-y-2">
         <h2 className="flex justify-center text-xl">Login</h2>
 
@@ -22,7 +22,7 @@ export default function LoginCard() {
             <label htmlFor="password" className="text-base text-dark">
               Password
             </label>
-            <div className="flex items-center">
+            <div className="flex items-center relative">
               <input
                 type="Password"
                 placeholder="Password"
@@ -30,20 +30,19 @@ export default function LoginCard() {
                 id="password"
               />
               <img
-                className="absolute right-16"
+                className="absolute right-3"
                 src="/public/assets/icon/pass-show.svg"
                 alt="show password icon"
-              />{" "}
+              />
             </div>
             <label className="text-xs">
               <a href="#">Forgot password?</a>
             </label>
           </div>
-          <button className="text-white py-2 px-5 w-full bg-primary hover:bg-accent rounded">
+          <button type="submit" className="text-white py-2 px-5 w-full bg-primary hover:bg-accent rounded">
             Sign in
           </button>
         </form>
-
         <p className="relative flex justify-center text-xs">
           <span className="line-login-before"></span>
           Or continue with
