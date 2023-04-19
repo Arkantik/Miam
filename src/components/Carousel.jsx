@@ -18,7 +18,6 @@ import slide_image_7 from '/public/assets/img/tranding-food-1.png';
 export default function Carousel() {
   return (
     <div className="container">
-      <h1 className="heading">Flower Gallery</h1>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -63,12 +62,8 @@ export default function Carousel() {
         </SwiperSlide>
 
         <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-          </div>
-          <div className="swiper-button-next slider-arrow">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
+            <img src="/public/assets/icon/arrow-left.svg" className="w-5 h-5 swiper-button-prev slider-arrow" name="arrow-back-outline" />
+            <img src="/public/assets/icon/arrow-right.svg" className="w-5 h-5 swiper-button-next slider-arrow" name="arrow-forward-outline" />
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>
