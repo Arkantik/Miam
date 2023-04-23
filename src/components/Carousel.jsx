@@ -26,24 +26,23 @@ const slideImages = [
 
 export default function Carousel() {
   return (
-    <div className="container mx-auto max-w-screen-xl py-16 px-4">
+    <div className="container mx-auto max-w-screen-xl">
       <Swiper
         effect="coverflow"
         grabCursor
         centeredSlides
-        loop
         initialSlide={3}
         slidesPerView="auto"
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 100,
+          depth: 150,
           modifier: 2.5,
         }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
+        pagination={{ el: '.pagination', clickable: true }}
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
           clickable: true,
         }}
         className="swiper_container h-52rem"
@@ -54,14 +53,16 @@ export default function Carousel() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="slider-controler flex justify-center items-center absolute left-0 right-0 bottom-4">
-        <button className="swiper-button-prev slider-arrow inline-flex items-center justify-center text-primary w-10 h-10">
-          <img src="/public/assets/icon/arrow-left.svg" alt="Previous Slide" className="w-5 h-5" />
+      <div className="flex justify-center items-center swiper-controller">
+        <div className="flex items-center gap-4">
+          <button className="button-prev">
+            <img src="/public/assets/icon/arrow-left.svg" alt="Previous Slide" className="w-8 h-8" />
+          </button>
+          <div className="pagination flex justify-around items-center gap-1"></div>
+          <button className='button-next'>
+            <img src="/public/assets/icon/arrow-right.svg" alt="Next Slide" className="w-8 h-8" />
         </button>
-        <div className="swiper-pagination mx-6"></div>
-        <button className="swiper-button-next slider-arrow inline-flex items-center justify-center text-primary w-10 h-10">
-          <img src="/public/assets/icon/arrow-right.svg" alt="Next Slide" className="w-5 h-5" />
-        </button>
+        </div>       
       </div>
     </div>
   );
