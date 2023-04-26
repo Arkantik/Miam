@@ -10,7 +10,7 @@ import recipesData from "../data/data-recipes";
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 export default function Carousel() {
-  const slideImages = recipesData.slice(0,6).map(({ src, name }) => ({ src, name }));
+  const slideImages = recipesData.slice(0,7).map(({ src, name }) => ({ src, name }));
 
   return (
     <div className="container mx-auto max-w-screen-xl">
