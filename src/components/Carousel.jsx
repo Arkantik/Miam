@@ -18,7 +18,7 @@ export default function Carousel() {
         effect="coverflow"
         grabCursor
         centeredSlides
-        initialSlide={4}
+        initialSlide={3}
         slidesPerView="auto"
         coverflowEffect={{
           rotate: 0,
