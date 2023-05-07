@@ -4,88 +4,91 @@
 
 /*________________________________________________________________________*\
   $BASE
+  custom CSS rules for base HTML elements
 /*________________________________________________________________________*/
 @layer base {
-	@font-face {
-		font-family: "Poppins";
-		font-weight: 400;
-		font-style: italic;
-		src: url("/assets/fonts/poppins-400-italic.ttf") format("truetype");
-	}
-	@font-face {
-		font-family: "Poppins";
-		font-weight: 400;
-		src: url("/assets/fonts/poppins-400.ttf") format("truetype");
-	}
-	@font-face {
-		font-family: "Poppins";
-		font-weight: 500;
-		src: url("/assets/fonts/poppins-500.ttf") format("truetype");
-	}
-	@font-face {
-		font-family: "Poppins";
-		font-weight: 600;
-		src: url("/assets/fonts/poppins-600.ttf") format("truetype");
-	}
-	@font-face {
-		font-family: "Poppins";
-		font-weight: 700;
-		src: url("/assets/fonts/poppins-700.ttf") format("truetype");
-	}
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: italic;
+    src: url("/assets/fonts/poppins-400-italic.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    src: url("/assets/fonts/poppins-400.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 500;
+    src: url("/assets/fonts/poppins-500.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 600;
+    src: url("/assets/fonts/poppins-600.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 700;
+    src: url("/assets/fonts/poppins-700.ttf") format("truetype");
+  }
 }
 
 /*________________________________________________________________________*\
   $UTILITIES
+  custom CSS rules for utilities (.layout, .shadow, ...)
 /*________________________________________________________________________*/
 @layer utilities {
-	.is-active {
-		background-color: theme("colors.primary");
-		border-radius: 20px;
-		padding: 4px 16px;
-	}
-	.navlink {
-		border: 1px solid transparent;
-		border-radius: 20px;
-		padding: 4px 16px;
-		transition: all 0.3s ease-in-out;
-	}
+  .is-active {
+    background-color: theme("colors.primary");
+    border-radius: 20px;
+    padding: 4px 16px;
+  }
+  .navlink {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 4px 16px;
+    transition: all 0.3s ease-in-out;
+  }
 
-	.navlink:not(.is-active):hover {
-		border-color: theme("colors.accent");
-		color: theme("colors.primary");
-	}
+  .navlink:not(.is-active):hover {
+    border-color: theme("colors.accent");
+    color: theme("colors.primary");
+  }
 
-	.card-grp {
-		border-radius: 20px;
-		padding: 2px 8px;
-	}
+  .line-login-before::before,
+  .line-login-after::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 40px;
+    background-color: lightgray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-	.line-login-before::before,
-	.line-login-after::after {
-		content: "";
-		display: inline-block;
-		height: 1px;
-		width: 40px;
-		background-color: lightgray;
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-	}
+  .line-login-before::before {
+    left: 0px;
+  }
 
-	.line-login-before::before {
-		left: 0px;
-	}
+  .line-login-after::after {
+    right: 0px;
+  }
+}
 
-	.line-login-after::after {
-		right: 0px;
-	}
-
-	.gallery {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-		justify-items: center;
-	}
+/*________________________________________________________________________*\
+  $COMPONENTS
+  custom CSS rules for components (.card, .btn, ...)
+/*________________________________________________________________________*/
+@layer components {
+  .recipes__gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    justify-items: center;
+  }
 }
 
 /*________________________________________________________________________*\
@@ -93,54 +96,54 @@
   /*________________________________________________________________________*/
 
 .container {
-	max-width: 124rem;
-	margin: 0 auto;
+  max-width: 124rem;
+  margin: 0 auto;
 }
 
 .swiper_container {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .swiper-slide {
-	width: 27rem;
-	height: 34rem;
+  width: 27rem;
+  height: 34rem;
 }
 
 @media (max-width: 500px) {
-	.swiper-slide {
-		width: 18rem !important;
-		height: 26rem !important;
-	}
-	.swiper-slide img {
-		width: 18rem !important;
-		height: 26rem !important;
-	}
+  .swiper-slide {
+    width: 18rem !important;
+    height: 26rem !important;
+  }
+  .swiper-slide img {
+    width: 18rem !important;
+    height: 26rem !important;
+  }
 }
 
 .swiper-slide img {
-	width: 27rem;
-	height: 32rem;
-	border-radius: 2rem;
-	object-fit: cover;
-	box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 27rem;
+  height: 32rem;
+  border-radius: 2rem;
+  object-fit: cover;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right {
-	display: none;
+  display: none;
 }
 
 .test .slider-arrow::after {
-	content: "";
+  content: "";
 }
 
 .swiper-pagination-bullet {
-	filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-	border: 1px solid theme(colors.neutral);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  border: 1px solid theme(colors.neutral);
 }
 
 .swiper-pagination-bullet-active {
-	background: theme(colors.accent);
-	width: 10px;
-	height: 10px;
+  background: theme(colors.accent);
+  width: 10px;
+  height: 10px;
 }

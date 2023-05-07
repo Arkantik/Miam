@@ -7,19 +7,9 @@ import RecipesLibrary from "../components/RecipesLibrary";
 import recipesFakeData from "../data/data-recipes";
 
 export default function Recipes() {
-  const [recipes, setRecipes] = useState(() => {
-    return [];
-  });
+  const [recipes, setRecipes] = useState([]);
 
-  const toggleFavoriteRecipe = (id) => {
-    setRecipes((prevRecipes) =>
-      prevRecipes.map((recipe) =>
-        recipe.id === id ? { ...recipe, favorite: !recipe.favorite } : recipe
-      )
-    );
-  };
-
-  // Create unique ID prior to using fake recipes datas
+  // create unique ID prior to using fake recipes datas
   useEffect(() => {
     const newRecipes = recipesFakeData.map((recipe) => ({
       ...recipe,
@@ -28,13 +18,30 @@ export default function Recipes() {
     setRecipes(newRecipes);
   }, []);
 
+  const handleFavorite = (id) => {
+    const clonedRecipes = [...recipes];
+    const updatedRecipes = clonedRecipes.map((recipe) =>
+      recipe.id === id ? { ...recipe, favorite: !recipe.favorite } : recipe
+    );
+    setRecipes(updatedRecipes);
+  };
+
+  const handleRating = (id, rating) => {
+    const clonedRecipes = [...recipes];
+    const updatedRecipes = clonedRecipes.map((recipe) =>
+      recipe.id === id ? { ...recipe, rating } : recipe
+    );
+    setRecipes(updatedRecipes);
+  };
+
   return (
-    <section className="space-y-4">
+    <section className="recipes__library space-y-4">
       <h2 className="text-xl">My Recipes Library</h2>
       <Search />
       <RecipesLibrary
         recipes={recipes}
-        toggleFavoriteRecipe={toggleFavoriteRecipe}
+        handleFavorite={handleFavorite}
+        handleRating={handleRating}
       />
     </section>
   );

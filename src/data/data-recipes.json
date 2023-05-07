@@ -5,7 +5,7 @@
     "alt": "Assortment of cookies, chocolate chip and brownie cookies",
     "name": "Cookies",
     "description": "Brown & chocolate",
-    "category": ["Desert", "Pantry"],
+    "category": ["Desert", "Pastry"],
     "serving": "4-6",
     "time": "30min",
     "rating": 0,
@@ -17,10 +17,10 @@
     "alt": "French bread with mapple syrup, bananas and blueberries",
     "name": "French Bread",
     "description": "Banana & blueberries",
-    "category": ["Desert", "Pantry"],
+    "category": ["Desert", "Pastry"],
     "serving": "2",
     "time": "45min",
-    "rating": 1,
+    "rating": 2,
     "favorite": false
   },
   {
@@ -32,7 +32,7 @@
     "category": ["Diner", "Asian"],
     "serving": "1",
     "time": "3h",
-    "rating": 2,
+    "rating": 1,
     "favorite": false
   },
   {
@@ -44,8 +44,8 @@
     "category": ["Lunch", "Meat"],
     "serving": "1",
     "time": "1h",
-    "rating": 3,
-    "favorite": false
+    "rating": 5,
+    "favorite": true
   },
   {
     "id": "5",
@@ -57,7 +57,7 @@
     "serving": "4-6",
     "time": "35min",
     "rating": 4,
-    "favorite": false
+    "favorite": true
   },
   {
     "id": "6",
@@ -65,10 +65,10 @@
     "alt": "Colorful cupcakes",
     "name": "Cupcake",
     "description": "Delicious and pop",
-    "category": ["Desert", "Pantry"],
+    "category": ["Desert", "Pastry"],
     "serving": "6-8",
     "time": "45min",
-    "rating": 5,
+    "rating": 3,
     "favorite": false
   },
   {
@@ -80,7 +80,7 @@
     "category": ["Lunch", "Italian"],
     "serving": "4-6",
     "time": "45min",
-    "rating": 0,
+    "rating": 1,
     "favorite": false
   },
   {
@@ -89,10 +89,10 @@
     "alt": "Pancakes with strawberries and mapple syrup",
     "name": "Pancakes",
     "description": "With strawberries",
-    "category": ["Desert", "Pantry"],
+    "category": ["Desert", "Pastry"],
     "serving": "4-6",
     "time": "30min",
-    "rating": 1,
+    "rating": 2,
     "favorite": false
   }
 ]
