@@ -3,36 +3,41 @@
 @tailwind utilities;
 
 /*________________________________________________________________________*\
+  $FONTS
+  import local fonts
+/*________________________________________________________________________*/
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../assets/fonts/poppins-400-italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../assets/fonts/poppins-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  src: url("../assets/fonts/poppins-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../assets/fonts/poppins-600.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  src: url("../assets/fonts/poppins-700.ttf") format("truetype");
+}
+
+/*________________________________________________________________________*\
   $BASE
   custom CSS rules for base HTML elements
 /*________________________________________________________________________*/
 @layer base {
-  @font-face {
-    font-family: "Poppins";
-    font-weight: 400;
-    font-style: italic;
-    src: url("/assets/fonts/poppins-400-italic.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Poppins";
-    font-weight: 400;
-    src: url("/assets/fonts/poppins-400.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Poppins";
-    font-weight: 500;
-    src: url("/assets/fonts/poppins-500.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Poppins";
-    font-weight: 600;
-    src: url("/assets/fonts/poppins-600.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Poppins";
-    font-weight: 700;
-    src: url("/assets/fonts/poppins-700.ttf") format("truetype");
-  }
 }
 
 /*________________________________________________________________________*\
@@ -89,17 +94,17 @@
     grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
     justify-items: center;
   }
+
+  .carousel__container {
+    max-width: 124rem;
+    margin: 0 auto;
+  }
 }
 
 /*________________________________________________________________________*\
-  $CAROUSEL
+  $REACT COMPONENTS
+  CAROUSEL
 /*________________________________________________________________________*/
-
-.container {
-  max-width: 124rem;
-  margin: 0 auto;
-}
-
 .swiper_container {
   margin-bottom: 2rem;
 }
@@ -121,11 +126,11 @@
 }
 
 .swiper-slide img {
-	width: 27rem;
-	height: 32rem;
-	border-radius: 1rem;
-	object-fit: cover;
-	box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 27rem;
+  height: 32rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .swiper-slide-shadow-left,
