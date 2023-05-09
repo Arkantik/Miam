@@ -92,8 +92,8 @@
 }
 
 /*________________________________________________________________________*\
-  $TO BE REM
-  /*________________________________________________________________________*/
+  $CAROUSEL
+/*________________________________________________________________________*/
 
 .container {
   max-width: 124rem;
@@ -121,11 +121,11 @@
 }
 
 .swiper-slide img {
-  width: 27rem;
-  height: 32rem;
-  border-radius: 2rem;
-  object-fit: cover;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+	width: 27rem;
+	height: 32rem;
+	border-radius: 1rem;
+	object-fit: cover;
+	box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .swiper-slide-shadow-left,
