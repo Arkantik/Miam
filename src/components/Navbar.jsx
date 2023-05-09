@@ -7,7 +7,7 @@ export default function Navbar() {
         <NavLink to={`/`}>
           <img
             className="max-w-md"
-            src="/assets/icon/logo-miam.svg"
+            src="../assets/icon/logo-miam.svg"
             alt="Logo Miam"
             width="92"
             height="48"
@@ -16,7 +16,7 @@ export default function Navbar() {
       </div>
 
       <div className="flex gap-[clamp(0.5rem,2vw,2rem)]">
-        <ul className="hidden md:flex items-center gap-[clamp(0.5rem,2vw,2rem)] text-neutral text-base">
+        <ul className="hidden items-center gap-[clamp(0.5rem,2vw,2rem)] text-base text-neutral md:flex">
           <li>
             <NavLink
               to="/"
@@ -71,7 +71,7 @@ export default function Navbar() {
 
         <button className="md:hidden">
           <img
-            src="/assets/icon/mobile-menu.svg"
+            src="../assets/icon/mobile-menu.svg"
             alt="mobile-menu"
             width="38"
             height="30"
@@ -83,7 +83,7 @@ export default function Navbar() {
             <button>
               <img
                 className="max-w-md"
-                src="/assets/icon/notification-0.svg"
+                src="../assets/icon/notification-0.svg"
                 alt="notifications"
                 width="19"
                 height="20"
@@ -94,7 +94,7 @@ export default function Navbar() {
             <button>
               <img
                 className="max-w-md"
-                src="/assets/icon/options.svg"
+                src="../assets/icon/options.svg"
                 alt="settings"
                 width="18"
                 height="20"
@@ -106,7 +106,7 @@ export default function Navbar() {
               <NavLink to={`/login`}>
                 <img
                   className="max-w-md"
-                  src="/assets/icon/logged.svg"
+                  src="../assets/icon/logged.svg"
                   alt="connect"
                   width="20"
                   height="20"

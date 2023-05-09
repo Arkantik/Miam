@@ -42,12 +42,12 @@ export default function RecipeCard({ recipe, handleFavorite, handleRating }) {
         <div className="content__details space-y-3">
           <div className="flex justify-between">
             <Characteristic
-              src={"/public/assets/icon/user-group.svg"}
+              src={"../assets/icon/user-group.svg"}
               alt={"serving"}
               info={serving}
             />
             <Characteristic
-              src={"/public/assets/icon/hourglass.svg"}
+              src={"../assets/icon/hourglass.svg"}
               alt={"preparation time"}
               info={time}
             />
