@@ -4,7 +4,7 @@ import Button from "../Button";
 export default function RecipeDay({ handleViewMore }) {
 	const { src, name, description } = recipesData[0];
 	return (
-		<section className="flex flex-col gap-8">
+		<div className="flex flex-col gap-8">
 			<h2 className="text-xl">Recipe of the day</h2>
 			<div className=" flex justify-center space-y-8">
 				<div className="flex max-w-[1280px] flex-col gap-8 md:grid md:grid-cols-[1fr_2fr]">
@@ -41,6 +41,6 @@ export default function RecipeDay({ handleViewMore }) {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }
