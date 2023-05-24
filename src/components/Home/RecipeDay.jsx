@@ -6,20 +6,20 @@ export default function RecipeDay({ handleViewMore }) {
 	return (
 		<section className="flex flex-col gap-8">
 			<h2 className="text-xl">Recipe of the day</h2>
-			<div className="flex justify-center">
-				<div className="grid max-w-[1280px] grid-cols-[1fr_2fr] gap-8">
+			<div className=" flex justify-center space-y-8">
+				<div className="flex max-w-[1280px] flex-col gap-8 md:grid md:grid-cols-[1fr_2fr]">
 					<div className="">
 						<img
 							src={src}
 							alt={name}
-							className="max-h-[500px] w-full rounded-xl object-cover"
+							className="max-h-[250px] w-full rounded-xl object-cover md:max-h-[500px]"
 						/>
 					</div>
-					<div className="flex flex-col justify-between gap-4 overflow-hidden text-justify">
+					<div className="flex flex-col gap-4 overflow-hidden text-justify">
 						<div className="flex flex-col gap-4">
 							<h3 className="text-lg">{name}</h3>
 							<p>{description}</p>
-							<p>
+							<p className="pb-4">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								Laborum ipsa, libero eligendi, ullam voluptatum expedita
 								laudantium eum sit totam autem distinctio maxime veniam nulla
@@ -28,14 +28,7 @@ export default function RecipeDay({ handleViewMore }) {
 								aspernatur illo sit. Laborum facere delectus necessitatibus
 								pariatur quam ea fugiat quidem? Enim optio ipsam nulla fuga
 								reprehenderit quibusdam, cum fugiat! Impedit, repudiandae.
-								Aspernatur aut quo excepturi? <br />
-								Itaque possimus quo, fugiat incidunt quis earum facere, nihil
-								ullam fuga vitae omnis maxime odit, nemo repudiandae sunt
-								laboriosam esse dolorum expedita aspernatur eius ea.
-								Repellendus, corporis hic. Harum a vero ipsa exercitationem
-								reprehenderit nulla amet rerum quia sapiente aliquid illo
-								voluptatibus ab in optio dicta laboriosam ex, error quasi
-								necessitatibus blanditiis omnis iusto
+								Aspernatur aut quo excepturi?
 							</p>
 						</div>
 						<div className="flex justify-end">
