@@ -1,10 +1,11 @@
-import Carousel from "../components/Carousel";
+import Carousel from "../components/Home/Carousel";
+import RecipeDay from "../components/Home/RecipeDay";
 
 export default function Home() {
-  return (
-    <section className="space-y-4">
-      <h2 className="text-xl">Last Recipes</h2>
-      <Carousel />
-    </section>
-  );
+	return (
+		<section className="space-y-8">
+			<Carousel />
+			<RecipeDay />
+		</section>
+	);
 }
